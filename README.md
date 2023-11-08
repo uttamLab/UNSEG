@@ -7,4 +7,5 @@ This is an implementation of [UNSEG](https://www.biorxiv.org/) on Python 3 with 
 The repository includes:
 * Source Python code of UNSEG.
 * Jupyter notebook to demonstrate the nuclei and cell segmention pipeline.
-* Zipped test RGB image of human gallbladder tissue, where the blue and red channels contain nucleus and cell membrane markers, respectively.  
+* Zipped test RGB image of human gallbladder tissue, where the blue and red channels contain nucleus and cell membrane markers, respectively.
+* Requirements.txt
