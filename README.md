@@ -24,3 +24,4 @@ Schoedel and Rhonda M Brand and Randall E Brand and Jian Yu and Lin Zhang and Br
 	journal = {bioRxiv}
 }
 ```
+![Segmentation Example](./qr_img.png)
