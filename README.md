@@ -10,7 +10,7 @@ The repository includes:
 * Zipped test RGB image of human gallbladder tissue, where the blue and red channels contain nucleus and cell membrane markers, respectively.
 * Requirements.txt
 
-* If you find this code useful in your research, please consider citing:
+* If you find UNSEG useful in your research, please consider citing:
 ```
 @article {Kochetov2023.11.13.566842,
 	author = {Bogdan Kochetov and Phoenix Bell and Paulo S Garcia and Akram S Shalaby and Rebecca Raphael and Benjamin Raymond and Brian J Leibowitz and Karen
