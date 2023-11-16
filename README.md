@@ -9,3 +9,11 @@ The repository includes:
 * Jupyter notebook to demonstrate the nuclei and cell segmention pipeline.
 * Zipped test RGB image of human gallbladder tissue, where the blue and red channels contain nucleus and cell membrane markers, respectively.
 * Requirements.txt
+
+* If you find this code useful in your research, please consider citing:
+  @inproceedings{plummerCITE2018,
+Author = {Bryan A. Plummer and Paige Kordas and M. Hadi Kiapour and Shuai Zheng and Robinson Piramuthu and Svetlana Lazebnik},
+Title = {Conditional Image-Text Embedding Networks},
+Booktitle  = {The European Conference on Computer Vision (ECCV)},
+Year = {2018}
+}
