@@ -37,6 +37,7 @@ from unseg import nuclei_segmentation
 ```
 
 ### Format of input image and parameters of `nuclei_cell_segmentation`
+The primary UNSEG parameters are `area_threshold` and `convexity_threshold`. If the UNSEG segmentation needs to be optimized for an individual image or a set of images then these parameters should be adjusted. The remaining parameters can also be used to fine-tune the performance. The default values of UNSEG parameters and reasonable ranges for their adjustment are shown in [Supplementary Table 2](https://www.biorxiv.org/content/10.1101/2023.11.13.566842v2.supplementary-material)
 * `intensity` : 3D (height, width, channels) numpy array.
         Intensities of nuclei marker (channel index = 0) and cell membrane marker (channel index = 1).
 * `area_threshold` : int (positive).
@@ -67,9 +68,6 @@ from unseg import nuclei_segmentation
         The area threshold for a cell without a nucleus.
 * `dilation_radius` : int (positive).
         The nucleus mask is morphologically dilated by this amount for cells without cell membrane marker expression.
-
-The primary UNSEG parameters are `area_threshold` and `convexity_threshold`. If the UNSEG segmentation needs to be optimized for an individual image or a set of images then these parameters should be adjusted. The remaining parameters can also be used to fine-tune the performance.
-The default values of UNSEG parameters and reasonable ranges for their adjustment are shown in [Supplementary Table 2](https://www.biorxiv.org/content/10.1101/2023.11.13.566842v2.supplementary-material)
 
 ### Outputs of `nuclei_cell_segmentation`
 * `nuc_seg` : 2D (height, width) numpy 'int32' array.
