@@ -1,0 +1,11 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Kochetov
+  given-names: Bogdan
+- family-names: Uttam
+  given-names: Shikhar
+orcid: https://orcid.org/0000-0002-0897-2918
+title:uttamLab/UNSEG: UNSEG.v.1.0
+version: UNSEG.v.1.0
+date-released: 2024-07-28
