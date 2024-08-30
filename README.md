@@ -82,16 +82,17 @@ The primary UNSEG parameters are `area_threshold` and `convexity_threshold`. If 
 ## Citing UNSEG
 If you find UNSEG useful in your research, please consider citing:
 ```
-@article {Kochetov2023.11.13.566842,
-	author = {Bogdan Kochetov and Phoenix Bell and Paulo S Garcia and Akram S Shalaby and Rebecca Raphael and Benjamin Raymond and Brian J Leibowitz and Karen
-Schoedel and Rhonda M Brand and Randall E Brand and Jian Yu and Lin Zhang and Brenda Diergaarde and Robert E Schoen and Aatur Singhi and Shikhar Uttam},
+@article {KU2024,
+	author = {Kochetov, Bogdan and Bell, Phoenix and Garcia, Paulo S. and Shalaby, Akram S. and Raphael, Rebecca and Raymond, Benjamin and Leibowitz, Brian J. and Schoedel, Karen and Brand, Rhonda M. and Brand, Randall E. and Yu, Jian and Zhang, Lin and Diergaarde, Brenda and Schoen, Robert E. and Singhi, Aatur and Uttam, Shikhar},
 	title = {UNSEG: unsupervised segmentation of cells and their nuclei in complex tissue samples},
-	elocation-id = {2023.11.13.566842},
-	year = {2023},
-	doi = {10.1101/2023.11.13.566842},
-	publisher = {Cold Spring Harbor Laboratory},
-	eprint = {https://www.biorxiv.org/content/early/2023/11/15/2023.11.13.566842.full.pdf},
-	journal = {bioRxiv}
+	year = {2024},
+	doi = {10.1038/s42003-024-06714-4},
+	publisher = {Springer Nature},
+	volume = {7},
+	number = {1062},
+	abstract = {Multiplexed imaging technologies have made it possible to interrogate complex tissue microenvironments at sub-cellular resolution within their native spatial context. However, proper quantification of this complexity requires the ability to easily and accurately segment cells into their sub-cellular compartments. Within the supervised learning paradigm, deep learning-based segmentation methods demonstrating human level performance have emerged. However, limited work has been done in developing such generalist methods within the unsupervised context. Here we present an easy-to-use unsupervised segmentation (UNSEG) method that achieves deep learning level performance without requiring any training data via leveraging a Bayesian-like framework, and nucleus and cell membrane markers. We show that UNSEG is internally consistent and better at generalizing to the complexity of tissue morphology than current deep learning methods, allowing it to unambiguously identify the cytoplasmic compartment of a cell, and localize molecules to their correct sub-cellular compartment. We also introduce a perturbed watershed algorithm for stably and automatically segmenting a cluster of cell nuclei into individual nuclei that increases the accuracy of classical watershed. Finally, we demonstrate the efficacy of UNSEG on a high-quality annotated gastrointestinal tissue dataset we have generated, on publicly available datasets, and in a range of practical scenarios..},
+	URL = {https://doi.org/10.1038/s42003-024-06714-4},
+	journal = {Communications Biology}
 }
 ```
 ![Segmentation Example](content/qr_img.png)
