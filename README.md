@@ -82,6 +82,9 @@ The primary UNSEG parameters are `area_threshold` and `convexity_threshold`. If 
 ## Citing UNSEG
 If you find UNSEG useful in your research, please consider citing:
 ```
+Kochetov B, Bell P, Garcia PS, Shalaby AS, Raphael R, Raymond B, Leibowitz BJ, Schoedel K, Brand RM, Brand RE, Yu J, Zhang L, Diergaarde B, Schoen RE, Singhi A, and Uttam S. UNSEG: unsupervised segmentation of cells and their nuclei in complex tissue samples. Commun Biol 7, 1062 (2024). https://doi.org/10.1038/s42003-024-06714-4.
+```
+```
 @article {KU2024,
 	author = {Kochetov, Bogdan and Bell, Phoenix and Garcia, Paulo S. and Shalaby, Akram S. and Raphael, Rebecca and Raymond, Benjamin and Leibowitz, Brian J. and Schoedel, Karen and Brand, Rhonda M. and Brand, Randall E. and Yu, Jian and Zhang, Lin and Diergaarde, Brenda and Schoen, Robert E. and Singhi, Aatur and Uttam, Shikhar},
 	title = {UNSEG: unsupervised segmentation of cells and their nuclei in complex tissue samples},
@@ -95,4 +98,4 @@ If you find UNSEG useful in your research, please consider citing:
 	journal = {Communications Biology}
 }
 ```
-![Segmentation Example](content/qr_img.png)
+![RIS](content/qr_img.png)
