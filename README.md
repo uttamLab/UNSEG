@@ -98,4 +98,4 @@ Kochetov B, Bell P, Garcia PS, Shalaby AS, Raphael R, Raymond B, Leibowitz BJ, S
 	journal = {Communications Biology}
 }
 ```
-![RIS](content/qr_img.png)
+
