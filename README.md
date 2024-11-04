@@ -79,6 +79,37 @@ The primary UNSEG parameters are `area_threshold` and `convexity_threshold`. If 
 * `n_cells` : int.
         Number of segmented cells.
 
+## Rare Memory Error and Its Troubleshooting
+Sometimes the segmentation of fluorescence images with very noisy nucleus marker (image channel 0) or/and missing cell membrane marker (image channel 1) leads to the formation of enormous ammount of nucleus clusters having self-intersections. During the Pertubated Watershed processing stage, the user may see multiple WARNINGS anda sharp increase in RAM usage that eventially can lead to the Memory Error. 
+To avoid the formation of numerious spurious clusters and, as a result, the memory error, we recommend to denoise the image background. For example, one can use the function `denoise_nucleus_background` for image pre-processing before its segmentation with UNSEG.
+```
+import numpy as np
+from skimage.filters import gaussian, threshold_multiotsu
+
+def scale_img(img):
+    img = img.astype('float64')
+    i_min = np.min(img)
+    i_max = np.max(img)
+    if i_max-i_min > 0:
+        img = (img-i_min)/(i_max-i_min)
+    return img
+
+def denoise_nucleus_background(intensity):
+    intensity = intensity.astype('float64')
+    n = intensity.shape[2]
+    for i in range(n):
+        intensity[:,:,i] = scale_img(intensity[:,:,i])
+        if i == 0:
+            mask = gaussian(intensity[:,:,i], sigma=3)
+            mask = scale_img(mask)
+	    thr = threshold_multiotsu(mask, classes=3)
+	    mask = mask < thr[0]
+	    intensity[mask,i] = 0
+    return intensity
+
+intensity = denoise_nucleus_background(intensity)
+```
+
 ## Citing UNSEG
 If you find UNSEG useful in your research, please consider citing:
 ```
