@@ -80,8 +80,7 @@ The primary UNSEG parameters are `area_threshold` and `convexity_threshold`. If 
         Number of segmented cells.
 
 ## Rare Memory Error and Its Troubleshooting
-Sometimes the segmentation of fluorescence images with very noisy nucleus marker (image channel 0) or/and missing cell membrane marker (image channel 1) leads to the formation of enormous ammount of nucleus clusters having self-intersections. During the Pertubated Watershed processing stage, the user may see multiple WARNINGS anda sharp increase in RAM usage that eventially can lead to the Memory Error. 
-To avoid the formation of numerous spurious clusters and, as a result, the memory error, we recommend to denoise the image background. For example, one can use the function `denoise_nucleus_background` for image pre-processing before its segmentation with UNSEG.
+Sometimes the segmentation of fluorescence images with very noisy nucleus marker (image channel 0) or/and missing cell membrane marker (image channel 1) leads to the formation of enormous ammount of nucleus clusters having self-intersections. During the Pertubated Watershed processing stage, the user may see multiple WARNINGS and a sharp increase in RAM usage that eventially can lead to the Memory Error. To avoid the formation of numerous spurious clusters and, as a result, the memory error, we recommend to denoise the image background. For example, one can use the function `denoise_nucleus_background` for image pre-processing before its segmentation with UNSEG.
 ```
 import numpy as np
 from skimage.filters import gaussian, threshold_multiotsu
