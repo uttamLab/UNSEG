@@ -110,6 +110,7 @@ intensity = denoise_nucleus_background(intensity)
 ```
 
 ## Citing UNSEG
+
 If you find UNSEG useful in your research, please consider citing:
 ```
 Kochetov B, Bell P, Garcia PS, Shalaby AS, Raphael R, Raymond B, Leibowitz BJ, Schoedel K, Brand RM, Brand RE, Yu J, Zhang L, Diergaarde B, Schoen RE, Singhi A, and Uttam S. UNSEG: unsupervised segmentation of cells and their nuclei in complex tissue samples. Commun Biol 7, 1062 (2024). https://doi.org/10.1038/s42003-024-06714-4.
