@@ -130,5 +130,5 @@ Kochetov B, Bell P, Garcia PS, Shalaby AS, Raphael R, Raymond B, Leibowitz BJ, S
 }
 ```
 ## Exemplar
-Tissue microenvironments are difficult to segment due to the complexity and heterogeneity of the tissue architecture and cellular morphology. Below is an example where we perform UNSEG and Cellpose on a tissue sample that capture this challenge. The example demonstrates the quality of UNSEG's performance.
+Tissue microenvironments are difficult to segment due to the complexity and heterogeneity of the tissue architecture and cellular morphology. Below is an example where we perform UNSEG and Cellpose on a tissue sample that capture this challenge. The example demonstrates the quality of UNSEG's performance. More detailed analysis can be found in the paper.
 ![UNSEG and Cellpose](content/Unseg_cellpose.png)
